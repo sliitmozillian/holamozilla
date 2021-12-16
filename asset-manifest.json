@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/github.io/holamozilla/static/css/main.073c9b0a.css",
+    "main.js": "/github.io/holamozilla/static/js/main.ce82c900.js",
+    "static/js/787.9b805f27.chunk.js": "/github.io/holamozilla/static/js/787.9b805f27.chunk.js",
+    "index.html": "/github.io/holamozilla/index.html",
+    "main.073c9b0a.css.map": "/github.io/holamozilla/static/css/main.073c9b0a.css.map",
+    "main.ce82c900.js.map": "/github.io/holamozilla/static/js/main.ce82c900.js.map",
+    "787.9b805f27.chunk.js.map": "/github.io/holamozilla/static/js/787.9b805f27.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.ce82c900.js"
+  ]
+}
