@@ -17,31 +17,6 @@
     margin: 0;
     text-shadow: 1px 2px 8px rgba(255, 152, 0, 0.12);
 }
-.carousel-status {
-    margin-top: 2.5rem;
-    text-align: center;
-}
-
-.carousel-status-dots {
-    display: flex;
-    justify-content: center;
-    gap: 0.7rem;
-}
-
-.carousel-status-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    display: inline-block;
-    transition: background 0.2s, box-shadow 0.2s;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-}
-
-.carousel-status-dot.active {
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
-}
 
 .hero-container {
     position: relative;
