@@ -1,0 +1,12 @@
+main.register {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #ff9800 0%, #ff5722 100%);
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
