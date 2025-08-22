@@ -1,8 +1,19 @@
 import "./App.css";
-import Hero from "./Hero";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Index from "./pages/Index";
+import Register from "./pages/register";
 
 function App() {
-  return <Hero />;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="">
+          <Route path="" element={<Index />} />
+          <Route path="register" element={<Register />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
