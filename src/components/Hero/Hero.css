@@ -11,11 +11,11 @@
     text-shadow: 1px 2px 8px rgba(0,0,0,0.18);
 }
 .coming-next-desc {
-    color: #fff3e0;
+    color: #e6d6ff;
     font-size: 1.2rem;
     font-weight: 500;
     margin: 0;
-    text-shadow: 1px 2px 8px rgba(255, 152, 0, 0.12);
+    text-shadow: 1px 2px 8px rgba(106, 21, 210, 0.15);
 }
 
 .hero-container {
@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(120deg, #ff9800 0%, #ff5722 100%);
+    background: linear-gradient(180deg, #270550 0%, #6A15D2 100%);
     overflow: hidden;
 }
 
@@ -32,7 +32,7 @@
     position: relative;
     z-index: 2;
     text-align: center;
-    color: #fff3e0;
+    color: #e6d6ff;
     padding: 0;
     background: none;
     border-radius: 0;
@@ -47,14 +47,14 @@
     letter-spacing: 3px;
     margin-bottom: 0.5rem;
     margin-top: 0;
-    text-shadow: 2px 4px 16px rgba(255, 87, 34, 0.25);
+    text-shadow: 2px 4px 16px rgba(106, 21, 210, 0.25);
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    color: #ffe0b2;
-    text-shadow: 1px 2px 8px rgba(255, 152, 0, 0.15);
+    color: #d1b3ff;
+    text-shadow: 1px 2px 8px rgba(106, 21, 210, 0.15);
 }
 
 .hero-btn {
@@ -62,18 +62,18 @@
     padding: 0.75rem 2.5rem;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #ff5722;
-    background: #fff3e0;
+    color: #270550;
+    background: #e6d6ff;
     border: none;
     border-radius: 32px;
-    box-shadow: 0 2px 8px rgba(255, 87, 34, 0.15);
+    box-shadow: 0 2px 8px rgba(106, 21, 210, 0.2);
     text-decoration: none;
     transition: background 0.2s, color 0.2s, transform 0.2s;
 }
 
 .hero-btn:hover {
-    background: #ff9800;
-    color: #fff3e0;
+    background: #6A15D2;
+    color: #fff;
     transform: translateY(-2px) scale(1.05);
 }
 
@@ -83,7 +83,7 @@
     left: -120px;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, #fff3e0 0%, #ff9800 60%, transparent 100%);
+    background: radial-gradient(circle, #6A15D2 0%, #270550 60%, transparent 100%);
     opacity: 0.18;
     border-radius: 50%;
     z-index: 1;
@@ -95,7 +95,7 @@
   padding: 0.9rem 2.75rem;
   font-size: 1.25rem;
   font-weight: 800;
-  color: #ff5722;
+  color: #270550;
   background: #fff;
   border: none;
   border-radius: 40px;
@@ -113,11 +113,10 @@
 }
 
 /* Mobile-first responsive design for Hero title and subtitle */
-/* Mobile devices - up to 767px */
 @media (max-width: 767px) {
   .hero-title {
-    font-size: 2.2rem; /* Reduced from 4rem for mobile */
-    letter-spacing: 1px; /* Reduced letter spacing for mobile */
+    font-size: 2.2rem;
+    letter-spacing: 1px;
   }
   
   .coming-next-section {
