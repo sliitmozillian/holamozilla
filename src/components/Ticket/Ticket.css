@@ -1,0 +1,14 @@
+.ticket-canvas {
+  margin: 20px;
+  width: 560px;
+  height: 280px;
+}
+
+@media (max-width: 767px) {
+  .ticket-canvas {
+    width: 90% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    margin-bottom: 20px;
+  }
+}
