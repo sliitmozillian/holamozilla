@@ -1,65 +1,77 @@
 main.contact {
   position: relative;
   min-height: 100vh;
-  display: grid;
-  align-items: end;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: linear-gradient(180deg, #270550 0%, #6A15D2 100%);
   overflow: hidden;
-}
 
-main.contact .contact-information {
-  position: relative;
-  background-color: #eaeaea;
-  width: 75vw;
-  height: 50vh;
-  border-top-left-radius: 200px;
-  border-top-right-radius: 200px;
-  display: grid;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  padding: 40px 20px;
-  text-align: center;
-  color: #333;
-  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.1);
-  justify-items: start;
+  h2 {
+    margin: 4rem 0 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+  }
 
-}
+  .contact-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding: 8rem 2rem 3rem;
+    border-top-left-radius: 50% 18%;
+    border-top-right-radius: 50% 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
 
-main.contact .contact-information h2 {
-  font-size: 2.2rem;
-  margin-bottom: 25px;
-  color: #6A15D2;
-  font-weight: bold;
-  z-index: 5px;
-}
 
-main.contact .contact-information p {
-  margin: 15px 0;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #444;
-  z-index: 5;
-}
+    .contact-link {
+      width: min(80%, 28rem);
+      padding: 0.75rem 1.5rem;
+      border: 1px solid #6A15D2;
+      border-radius: 9999px;
+      background: #fff;
+      transition: all 0.25s ease;
 
-main.contact .contact-information a {
-  color: #6A15D2;
-  font-weight: 600;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
-}
+      &:hover {
+        background: #f9f6ff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(106, 21, 210, 0.2);
+      }
 
-main.contact .contact-information a:hover {
-  color: #270550;
-  border-bottom: 2px solid #270550;
-}
+      a {
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 1.1rem;
+        color: #6A15D2;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
 
-.hacker-fox {
-  position: absolute;
-  right: 10%;
-  top: -155px;
-  width: 225px;
-  height: 225px;
+  p {
+    color: #6A15D2;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+
+    a {
+      color: #6A15D2;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+  }
+
+
 }
