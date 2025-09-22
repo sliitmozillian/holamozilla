@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 
 import "./Ticket.css"
 
@@ -6,9 +6,27 @@ export default function Ticket({ name }) {
 
   name = name.trim()
   const canvasRef = useRef()
-  const initialized = useRef(false)
+  const [issued, setIssued] = useState(false)
 
   useEffect(() => {
+    const canvas = canvasRef.current
+    const ctx = canvas.getContext("2d")
+    const canvasHeight = canvas.height
+    const canvasWidth = canvas.width
+
+    const ticketSkeletonImage = new Image(canvasWidth, canvasHeight)
+    ticketSkeletonImage.onload = () => {
+      if (!issued) {
+        ctx.drawImage(ticketSkeletonImage, 0, 0, canvasWidth, canvasHeight)
+      }
+    }
+
+    ticketSkeletonImage.src = "/images/ticket-skeleton.png"
+  }, [issued])
+
+  useEffect(() => {
+    if (name !== '' && !issued) setIssued(true)
+    if (!issued) return
     const canvas = canvasRef.current
     const ctx = canvas.getContext("2d")
     const canvasWidth = canvas.width
@@ -20,13 +38,8 @@ export default function Ticket({ name }) {
       ctx.drawImage(ticketImage, 0, 0, canvasWidth, canvasHeight)
       // draw participant name
       ctx.fillStyle = "white"
-      ctx.font = "bold 32px serif"
-      ctx.fillText(name, 30, 100)
-
-      if (!initialized.current) {
-        initialized.current = true
-        return
-      }
+      ctx.font = "bold 40px 'Darker Grotesque'"
+      ctx.fillText(name, 40, 95)
 
       // download image
       const link = document.createElement("a")
@@ -37,7 +50,7 @@ export default function Ticket({ name }) {
     }
     ticketImage.src = "/images/ticket.png"
 
-  }, [canvasRef, name])
+  }, [issued, canvasRef, name])
 
   return (
     <canvas ref={canvasRef} className="ticket-canvas" width={560} height={280}></canvas>
