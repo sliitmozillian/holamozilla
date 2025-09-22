@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import CountdownTimer from "../CountdownTimer";
 import "./Hero.css";
 
-const eventDate = new Date("2025-09-27T00:00:00")
+const eventDate = new Date("2025-09-27T11:00:00")
 
 const months =
   ["January", "February", "March", "April", "May", "June", "July", "Aughust", "September", "October", "November", "December"]
@@ -29,7 +29,7 @@ function Hero() {
           <p className="hero-subtitle"> Orientation program for the
             Mozilla Campus Club of SLIIT</p>
         </div>
-        <Link to="register" className="hero-register-button">Register now</Link>
+        <Link to="https://forms.gle/arvimm6KUz6cAfbt9" className="hero-register-button">Register now</Link>
         <div style={{ fontWeight: 900 }}>
           {getOrdinalDate(eventDate)} of {months[eventDate.getMonth()]}{" "}
           {eventDate.getFullYear()} @ {eventDate.toLocaleTimeString([], {
