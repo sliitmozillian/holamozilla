@@ -8,6 +8,12 @@ export default function Ticket({ name }) {
   const canvasRef = useRef()
   const [issued, setIssued] = useState(false)
 
+  // prefetch images
+  useEffect(() => {
+    new Image().src = "/images/ticket.png"
+    new Image().src = "/images/ticket-skeleton.png"
+  }, [])
+
   useEffect(() => {
     const canvas = canvasRef.current
     const ctx = canvas.getContext("2d")
