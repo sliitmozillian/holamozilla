@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Contact.css";
 import { faArrowRight, faAt, faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export default function Contact() {
   return (
@@ -10,12 +10,12 @@ export default function Contact() {
       <section className="contact-section">
         <div className="contact-link">
           <a
-            href="https://www.sliitmozilla.org//"
+            href="https://chat.whatsapp.com/KxLR1XTjVP58EdpKJLtIIr"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGlobe} />
-            <div>Our website</div></a>
+            <FontAwesomeIcon icon={faWhatsapp} />
+            <div>WhatsApp</div></a>
         </div>
         <div className="contact-link">
           <a
@@ -24,16 +24,7 @@ export default function Contact() {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faAt} />
-            <div>Contact email</div></a>
-        </div>
-        <div className="contact-link">
-          <a
-            href="https://facebook.com/sliitmozilla"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faFacebook} />
-            <div>Facebook</div></a>
+            <div>Email Us</div></a>
         </div>
         <div className="contact-link">
           <a
@@ -46,12 +37,22 @@ export default function Contact() {
         </div>
         <div className="contact-link">
           <a
+            href="https://facebook.com/sliitmozilla"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faFacebook} />
+            <div>Facebook</div></a>
+        </div>
+        
+        <div className="contact-link">
+          <a
             href="https://links.sliitmozilla.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faArrowRight} />
-            <div>Explore all our links</div></a>
+            <div>Explore All Our Social Links</div></a>
         </div>
         <p>For general inquiries, please visit our <a
           href="https://www.sliitmozilla.org/contact/"

@@ -48,6 +48,9 @@ export default function Header() {
           <li>
             <Link to="https://forms.gle/arvimm6KUz6cAfbt9">Register</Link>
           </li>
+           <li>
+            <Link to="/ticket">Ticket</Link>
+          </li>
           <li>
             <Link to="contact">Contact</Link>
           </li>
