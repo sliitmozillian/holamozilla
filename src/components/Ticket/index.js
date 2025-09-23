@@ -44,7 +44,7 @@ export default function Ticket({ name }) {
       ctx.drawImage(ticketImage, 0, 0, canvasWidth, canvasHeight)
       // draw participant name
       ctx.fillStyle = "white"
-      ctx.font = "bold 40px 'Darker Grotesque'"
+      ctx.font = `bold ${name.length > 20 ? 25 : 40}px 'Darker Grotesque`
       ctx.fillText(name, 40, 95)
 
       // download image

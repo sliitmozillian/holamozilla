@@ -10,6 +10,7 @@ export default function TicketPage() {
 	const generateTicket = () => {
 		const name = nameRef.current.value.trim();
 		if (!name) return setError("Name cannot be empty");
+		if (name.length > 30) return setError("That name's a little too long to fit on the ticket...")
 		setName(nameRef.current.value);
 		setError(null);
 	};
